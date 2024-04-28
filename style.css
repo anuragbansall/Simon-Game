@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+h2{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    /* background-color: pink; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    gap: 1vw;
+}
+
+.box{
+    height: 15vmax;
+    width: 15vmax;
+    border-radius: 10px;
+    /* border: 5px solid black; */
+    /* margin: 0.5vw; */
+    cursor: pointer;
+}
+
+.red{
+    background-color: #d95980;
+}
+
+.green{
+    background-color: #63aac0;
+}
+
+.yellow{
+    background-color: #f99b45;
+}
+
+.blue{
+    background-color: #819ff9;
+}
+
+.game-flash{
+    background-color: #fff;
+}
+
+.user-flash{
+    background-color: green;
+}
+
+.highest-score{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: fit-content;
+    height: 2vw;
+    background-color: #555;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    body{
+        gap: 5vw;
+        padding: 5vw;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    
+    h2{
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 2vw;
+    }
+    
+    .row{
+        gap: 2vw;
+    }
+    
+    .box{
+        height: 40vw;
+        width: 40vw;
+    }
+    
+    .red{
+        background-color: #d95980;
+    }
+    
+    .green{
+        background-color: #63aac0;
+    }
+    
+    .yellow{
+        background-color: #f99b45;
+    }
+    
+    .blue{
+        background-color: #819ff9;
+    }
+    
+    .game-flash{
+        background-color: #fff;
+    }
+    
+    .user-flash{
+        background-color: green;
+    }
+    
+    .highest-score{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 1vw;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: fit-content;
+        height: 2vw;
+        background-color: #555;
+        color: #ffffff;
+    }
+}
